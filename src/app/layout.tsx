@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, ABeeZee } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import NavLinks from "../ui/nav-links";
+
+// const inter = Inter({ subsets: ["latin"], display: "swap" });
+const abeezee = ABeeZee({ subsets: ["latin"], display: "swap", weight: "400" });
 
 export const metadata: Metadata = {
   title: "Home | PortRadar",
@@ -16,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={abeezee.className}>
+        <NavLinks />
+        {children}
+      </body>
     </html>
   );
 }
