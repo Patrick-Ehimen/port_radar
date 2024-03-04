@@ -12,7 +12,12 @@ export default function Home() {
           Open a free account in minutes right from your phone <br /> and make
           your money go further
         </span>
-        <Image src={Safari} alt="coolImg" className="mt-[20px] mb-[80px]" />
+        <Image
+          src={Safari}
+          alt="coolImg"
+          className="mt-[20px] mb-[80px]"
+          priority={false}
+        />
         {/* </div> */}
       </div>
     </main>
