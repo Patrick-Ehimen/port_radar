@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, ABeeZee } from "next/font/google";
 import "./globals.css";
 
-import NavLinks from "../ui/nav-links";
+// import NavLinks from "../ui/nav-links";
 
 // const inter = Inter({ subsets: ["latin"], display: "swap" });
 const abeezee = ABeeZee({ subsets: ["latin"], display: "swap", weight: "400" });
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={abeezee.className}>
-        <NavLinks />
+        {/* <NavLinks /> */}
         {children}
       </body>
     </html>
